@@ -1,0 +1,66 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+  span {
+    background: #eefff4;
+    border: 3px solid #e9fff2;
+    color: rgb(95, 93, 93);
+    border-radius: 8px;
+    padding: 8px 20px;
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    font-size: 24px;
+    line-height: 1.2;min-width: 330px;
+    max-width: 200px;
+    cursor: pointer;
+  }
+
+  .row{
+     display: flex;
+    align-content: center;
+    flex-direction: row;
+  }
+  .col{
+      display: flex;
+    flex-direction: column;
+  }
+  .first > .row > span:before {
+    display: none;
+    
+  }
+   .first > .row > span {
+   font-size: 33px; 
+   text-align: center;
+color: #116069;;
+
+  }
+
+  span:before {
+    content: "";
+    width: 40px;
+    height: 5px;
+    background-color: #116069;
+    position: absolute;
+    left: -41px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+ 
+  
+  span:hover {
+
+border: 3px solid #116069;
+    background:  #e6ffef;
+  }
+  span:hover + .col span {
+border: 3px solid #116069;
+
+    background:  #e6ffef;
+  }
+ 
+  

@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    background-color: #F3FBFB;
+    color: #252E40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    width: 900px;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.container header {
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.box-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px;
+    gap: 10px;
+    margin: 30px auto;
+    
+}
+
+.box-card .card {
+    background-color: #fff;
+    text-align: center;
+    border-radius:20px;
+    border: 1px solid #ececec;
+    padding: 10px;
+}
+
+.card:hover {
+    box-shadow: 3px 3px 9px rgba(157, 162, 173, .5);
+}
+
+.card span {
+    display: block;
+    padding: 30px;
+}
+
+.card .icono {
+    font-size: 2.3em;
+}
+
+.card h2 {
+    font-size: 14px;
+    line-height: 2.5em;
+}
+
+.card p {
+    font-size: 12px;
+    line-height: 1.8em;
+}
+
+/* Boton footer */
+.boton {
+    text-align: center;
+    padding: 20px;
+}
+
+.boton button {
+    width: 150px;
+    height: 45px;
+    background-color: #10182f;
+    color: #f4f4f4;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1a2547;
+}
+
+/* Color iconos */
+.blue {
+    width: 95px;
+    height: 100px;
+    padding: 20px;
+    background-color: #f3f7ff;
+    color: #306bf3;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.pink {
+    width: 90px;
+    height: 90px;
+    padding: 20px;
+    background-color: #f9f3ff;
+    color: #CF669A;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.red {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    background-color: #fff2f2;
+    color: #EC8C8C;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.green {
+    width: 95px;
+    height: 100px;
+    padding: 20px;
+    background-color: #e9fbf2;
+    color: #32b432;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
